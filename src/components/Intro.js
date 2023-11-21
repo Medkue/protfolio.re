@@ -2,8 +2,8 @@ import { Activedot } from "./Activedot";
 
 export const Intro = () => {
   return (
-    <div className="w-[80%] flex flex-row justify-center p-[10px]">
-      <div className="flex-col gap-[50px]">
+    <div className="w-[80%] flex flex-col-reverse items-center md:flex md:flex-row justify-center p-[10px]">
+      <div className=" flex-col gap-[50px]">
         <div className="flex justify-center flex-col gap-[40px]">
           <p className="text-3xl font-bold">Hi, I’m Chomo 👋</p>
           <p className="w-[80%] font-normal text-[#4B5563] font-inter">

@@ -1,8 +1,54 @@
 import { Button } from "./Button";
+import { Javascript } from "./Javacript";
 
 export const Skills = () => {
+  let data = [
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+    {
+      text: "blabla",
+      src: <Javascript />,
+    },
+  ];
+
   return (
     <div className="w-[80%] flex flex-col gap-[30px] items-center pb-[50px]">
+      <div className="flex flex-row gap-[100px]">
+        {data.map((item) => {
+          return (
+            <div className="flex flex-col gap-[10px]">
+              {item.src}
+              <p>{item.text}</p>
+            </div>
+          );
+        })}
+      </div>
       <div className="mt-[50px]">
         <Button title="Skills"></Button>
       </div>
