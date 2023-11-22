@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const Aboutme = () => {
   return (
-    <div className="w-full bg-[#F9FAFB] flex flex-col items-center gap-[50px] pb-[100px]">
+    <div className="w-full bg-[#F9FAFB] flex flex-col items-center gap-[50px] pb-[100px] dark:bg-[#111827]">
       <div className="mt-[50px]">
         <Button title="About"></Button>
       </div>

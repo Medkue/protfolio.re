@@ -1,4 +1,4 @@
-export const Javascript = () => {
+export const Javascript = (props) => {
   return (
     <svg
       width="64"

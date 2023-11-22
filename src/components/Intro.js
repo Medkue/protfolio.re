@@ -2,10 +2,10 @@ import { Activedot } from "./Activedot";
 
 export const Intro = () => {
   return (
-    <div className="w-[80%] flex flex-col-reverse items-center md:flex md:flex-row justify-center p-[10px]">
+    <div className="w-[80%] flex flex-col-reverse items-center md:flex md:flex-row justify-center p-[10px] dark:bg-[#030712] mt-[180px]">
       <div className=" flex-col gap-[50px]">
         <div className="flex justify-center flex-col gap-[40px]">
-          <p className="text-3xl font-bold">Hi, I’m Chomo 👋</p>
+          <p className="text-3xl font-bold">Hi, Hairtuudaa 👋</p>
           <p className="w-[80%] font-normal text-[#4B5563] font-inter">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
