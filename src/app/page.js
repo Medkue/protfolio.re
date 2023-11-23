@@ -11,6 +11,8 @@ import { useState } from "react";
 
 export default function Home(props) {
   const [darkmode, setDarkmode] = useState(false);
+  const [menu, setMenu] = useState(false);
+  let kk = "flex";
   return (
     <div
       className={
@@ -18,7 +20,12 @@ export default function Home(props) {
       }
     >
       <div className="w-full flex flex-col items-center gap-y-28 dark:bg-[#030712]">
-        <Nav setDarkmode={setDarkmode} darkmode={darkmode}></Nav>
+        <Nav
+          setDarkmode={setDarkmode}
+          darkmode={darkmode}
+          menu={menu}
+          setMenu={setMenu}
+        ></Nav>
         <Intro></Intro>
         <Aboutme></Aboutme>
         <Skills></Skills>
