@@ -1,12 +1,14 @@
 import { Activedot } from "./Activedot";
 
-export const Intro = () => {
+export const Intro = (props) => {
   return (
-    <div className="w-[80%] flex flex-col-reverse items-center md:flex md:flex-row justify-center p-[10px] dark:bg-[#030712] mt-[180px]">
-      <div className=" flex-col gap-[50px]">
+    <div className="w-[100%] flex flex-col-reverse items-center gap-[50px] md:flex md:w-[80%] md:flex-row justify-center p-[10px] dark:bg-[#030712] mt-[180px]">
+      <div className=" w-[100%] flex items-center md:w-[70%] flex-col gap-[50px]">
         <div className="flex justify-center flex-col gap-[40px]">
-          <p className="text-3xl font-bold">Hi, Hairtuudaa 👋</p>
-          <p className="w-[80%] font-normal text-[#4B5563] font-inter">
+          <p className="text-3xl font-bold dark:text-[#F9FAFB]">
+            Hi, Hairtuudaa 👋
+          </p>
+          <p className="w-[100%] md:w-[90%] font-normal text-[#4B5563] font-inter dark:text-[#D1D5DB]">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
             experiences that are fast, accessible, visually appealing, and
@@ -15,8 +17,12 @@ export const Intro = () => {
           </p>
           <div className="flex flex-col gap-[8px]">
             <div className="flex flex-row gap-[10px]">
-              <img src="/Icon.svg" />
-              <p className="font-normal text-[#4B5563] font-inter">
+              {props.darkmode ? (
+                <img src="/nightloc.svg" />
+              ) : (
+                <img src="/Icon.svg" />
+              )}
+              <p className="font-normal text-[#4B5563] font-inter dark:text-[#D1D5DB]">
                 Ulaanbaatar Mongolia
               </p>
             </div>
@@ -25,22 +31,36 @@ export const Intro = () => {
               <div className="w-[ 24px] h-[24px] flex justify-center items-center">
                 <Activedot color={"#10B981"}></Activedot>
               </div>
-              <p className="font-normal text-[#4B5563] font-inter">
+              <p className="font-normal text-[#4B5563] font-inter dark:text-[#D1D5DB]">
                 Unavailable for you
               </p>
             </div>
           </div>
-          <div className="flex gap-[10px]">
-            <img src="/n.svg" />
-            <img src="/twi.svg" />
-            <img src="/fig.svg" />
-          </div>
+          {props.darkmode ? (
+            <div className="flex gap-[10px]">
+              <img src="/dgit.svg" />
+              <img src="/dtwi.svg" />
+              <img src="/dfig.svg" />
+            </div>
+          ) : (
+            <div className="flex gap-[10px]">
+              <img src="/n.svg" />
+              <img src="/twi.svg" />
+              <img src="/fig.svg" />
+            </div>
+          )}
         </div>
       </div>
-      <div className="w-[600px] h-[320px] relative mt-[50px]">
-        <img className="w-[100%] h-[100%]" src="/Background.png"></img>
-        <div className="w-[100%] h-[100%] flex justify-center items-center bg-white absolute -top-10 -left-10">
-          <img className="w-[95%] h-[95%] object-cover  " src="/catcat.jpeg" />
+      <div className="w-[350px] h-[320px] relative mt-[50px] ">
+        <img
+          className="w-[350px] h-[320px] object-cover md:w-[280px]"
+          src="/Background.png"
+        ></img>
+        <div className="w-[280px] h-[320px] flex justify-center items-center bg-blacks absolute -top-5 left-9 md:-left-10 md:-top-10">
+          <img
+            className="w-[100%] h-[100%] object-cover  "
+            src="/catcat.jpeg"
+          />
         </div>
       </div>
     </div>

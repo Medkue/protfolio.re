@@ -1,71 +1,72 @@
 import { Button } from "./Button";
 import { Javascript } from "./Javacript";
 
-export const Skills = () => {
+export const Skills = (props) => {
   let data = [
     {
-      text: "blabla",
-      src: "/catcat.jpeg",
-    },
-    {
-      text: "blabla",
+      text: "Javascript",
       src: "/icon-javscript.png",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Typescript",
+      src: props.darkmode ? "/icon-typescript.svg" : "/icon-typescript.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "React",
+      src: props.darkmode ? "/icon-react.svg" : "/icon-react.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Next.js",
+      src: props.darkmode ? "/icon-nextjs.svg" : "/Group.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Node.js",
+      src: "/icon-nodejs.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Express",
+      src: props.darkmode ? "/icon-express.svg" : "/dicon-express.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Nest.js",
+      src: "/icon-nest.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Socket.io",
+      src: props.darkmode ? "/icon-socket.svg" : "/dicon-socket.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "PostgreSQL",
+      src: "/icon-postgresql.svg",
+    },
+
+    {
+      text: "MongoDB",
+      src: "/icon-mongodb.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Sass/Scss",
+      src: "/icon-sass.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Tailwindcss",
+      src: "/icon-tailwindcss.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Figma",
+      src: "/icon-figma.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Cypress",
+      src: props.darkmode ? "/icon-cypress.svg" : "/dicon-cypress.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Storybook",
+      src: "/icon-storybook.svg",
     },
     {
-      text: "blabla",
-      src: "/icon-javscript.png",
+      text: "Git",
+      src: "/icon-git.svg",
     },
   ];
 
@@ -74,7 +75,7 @@ export const Skills = () => {
       <div className="mt-[50px]">
         <Button title="Skills"></Button>
       </div>
-      <p className="font-normal text-[#4B5563] text-xl">
+      <p className="font-normal text-[#4B5563] text-xl dark:text-[#D1D5DB]">
         The skills, tools and technologies I am really good at:
       </p>
       <div className="w-full grid grid-cols-3 sm:grid-cols-8 gap-[100px] justify-center">
@@ -82,7 +83,7 @@ export const Skills = () => {
           return (
             <div className="flex w-[64px] h-[64px] flex-col gap-[10px] items-center">
               <img className="w-[64px] h-[64px]" src={item.src} />
-              <p>{item.text}</p>
+              <p className="dark:text-[#D1D5DB]">{item.text}</p>
             </div>
           );
         })}

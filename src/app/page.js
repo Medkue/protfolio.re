@@ -26,12 +26,12 @@ export default function Home(props) {
           menu={menu}
           setMenu={setMenu}
         ></Nav>
-        <Intro></Intro>
-        <Aboutme></Aboutme>
-        <Skills></Skills>
+        <Intro darkmode={darkmode}></Intro>
+        <Aboutme darkmode={darkmode}></Aboutme>
+        <Skills darkmode={darkmode}></Skills>
         <Experience darkmode={darkmode}></Experience>
-        <Work></Work>
-        <GetInTouch></GetInTouch>
+        <Work darkmode={darkmode}></Work>
+        <GetInTouch darkmode={darkmode}></GetInTouch>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export const Nav = (props) => {
   };
 
   return (
-    <div className="w-[100%] mt-[50px] flex justify-center dark:text-white fixed z-10 h-fit bg-white dark:bg-[#030712]">
+    <div className="w-[100%] pt-[50px] flex justify-center dark:text-white fixed z-10 h-fit bg-white dark:bg-[#030712] dark:opacity-100">
       <div className="w-[80%] flex justify-between">
         <div className="flex-row">
           <h3 className="text-3xl font-bold dark:bg-[#030712]">
@@ -38,7 +38,7 @@ export const Nav = (props) => {
         )}
       </div>
       {props.menu ? (
-        <div className="w-full h-full bg-[#F3F4F6] dark:bg-[#030712]  flex-col gap-[20px] p-[20px] fixed top-[0] md:hidden">
+        <div className="w-full h-full bg-[#F3F4F6] dark:bg-[#030712]  flex-col gap-[20px] p-[20px] opacity-100 fixed top-[0] md:hidden">
           <button onClick={menuToggle}>kk</button>
           <div className="flex flex-col gap-[20px] ">
             <h3 className="text-3xl font-bold dark:bg-[#030712]">
