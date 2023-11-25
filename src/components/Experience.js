@@ -8,7 +8,7 @@ export const Experience = (props) => {
         <div className="mt-[50px]">
           <Button title="Experience"></Button>
         </div>
-        <p className="font-normal text-[#4B5563] text-xl">
+        <p className="font-normal text-[#4B5563] dark:text-[#D1D5DB] text-xl">
           Here is a quick summary of my most recent experiences:
         </p>
 
