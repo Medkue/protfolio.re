@@ -12,7 +12,7 @@ export const Experience = (props) => {
           Here is a quick summary of my most recent experiences:
         </p>
 
-        <div className="w-[60%] flex bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
+        <div className="w-[100%] md:w-[60%] flex flex-col gap-[10px] md:flex md:flex-row bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
           <div className="grow basis-0">
             <img src="/Clip path group.png"></img>
           </div>
@@ -69,13 +69,13 @@ export const Experience = (props) => {
               </p>
             </div>
           </div>
-          <div className=" grow basis-0 flex justify-center">
+          <div className=" grow basis-0 flex md:justify-center">
             <p className="font-normal text-[#4B5563] text-base dark:text-[#D1D5DB]">
               Nov 2021 - Present
             </p>
           </div>
         </div>
-        <div className="w-[60%] flex bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
+        <div className="w-[100%] md:w-[60%] flex flex-col gap-[10px] md:flex md:flex-row bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
           <div className="grow basis-0">
             <img src="/Clip path group.png"></img>
           </div>
@@ -132,13 +132,13 @@ export const Experience = (props) => {
               </p>
             </div>
           </div>
-          <div className=" grow basis-0 flex justify-center">
+          <div className=" grow basis-0 flex md:justify-center">
             <p className="font-normal text-[#4B5563] text-base dark:text-[#D1D5DB]">
               Nov 2021 - Present
             </p>
           </div>
         </div>
-        <div className="w-[60%] flex bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
+        <div className="w-[100%] md:w-[60%] flex flex-col gap-[10px] md:flex md:flex-row bg-white p-[32px] rounded-[12px] shadow-md dark:bg-[#1F2937]">
           <div className="grow basis-0">
             <img src="/Clip path group.png"></img>
           </div>
@@ -159,7 +159,7 @@ export const Experience = (props) => {
               </p>
             </div>
           </div>
-          <div className=" grow basis-0 flex justify-center">
+          <div className=" grow basis-0 flex md:justify-center">
             <p className="font-normal text-[#4B5563] text-base dark:text-[#D1D5DB]">
               Nov 2021 - Present
             </p>

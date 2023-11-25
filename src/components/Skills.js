@@ -71,7 +71,7 @@ export const Skills = (props) => {
   ];
 
   return (
-    <div className="w-[80%] flex flex-col gap-[50px] items-center pb-[50px] dark:bg-[#030712]">
+    <div className="w-full md:w-[80%] flex flex-col gap-[50px] items-center pb-[50px] dark:bg-[#030712]">
       <div className="mt-[50px]">
         <Button title="Skills"></Button>
       </div>

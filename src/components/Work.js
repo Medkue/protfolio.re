@@ -6,11 +6,11 @@ export const Work = () => {
       <div className="mt-[50px]">
         <Button title="Work"></Button>
       </div>
-      <p className="font-normal text-[#4B5563] text-xl">
+      <p className="font-normal text-[#4B5563] text-xl dark:text-[#D1D5DB]">
         {" "}
         Some of the noteworthy projects I have built:
       </p>
-      <div className="flex w-[80%] shadow-md rounded-[12px] justify-center items-center">
+      <div className=" flex flex-col md:flex md:flex-row w-[80%] shadow-md rounded-[12px] justify-center items-center">
         <div className="flex grow basis-0 bg-[#F3F4F6] rounded-[12px] justify-center items-center">
           <img
             src="/Picture.png"
@@ -58,7 +58,7 @@ export const Work = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[80%] shadow-md rounded-[12px] justify-center items-center">
+      <div className="flex flex-col-reverse md:flex md:flex-row w-[80%] shadow-md rounded-[12px] justify-center items-center">
         {/* <div className="flex grow basis-0 bg-[#F3F4F6] rounded-[12px] justify-center items-center">
           <img
             src="/Picture.png"
@@ -112,7 +112,7 @@ export const Work = () => {
           ></img>
         </div>
       </div>
-      <div className="flex w-[80%] shadow-md rounded-[12px] justify-center items-center">
+      <div className="flex flex-col md:flex md:flex-row w-[80%] shadow-md rounded-[12px] justify-center items-center">
         <div className="flex grow basis-0 bg-[#F3F4F6] rounded-[12px] justify-center items-center">
           <img
             src="/Picture.png"
